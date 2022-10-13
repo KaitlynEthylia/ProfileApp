@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "candara", sans-serif;
+  font-size: 16pt;
+  transition: background-color 0.2s;
+}
+
+body.dark {
+  background-color: #20182e;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  height: 10vh;
+}
+header.dark {
+  background-color: #302d3d;
+}
+header div {
+  display: inline;
+}
+header nav {
+  display: inline;
+}
+header #themeButtons {
+  display: inline-flex;
+  align-items: center;
+  height: 10vh;
+}
+header #themeButtons .switch {
+  left: 10px;
+  position: relative;
+  display: inline-block;
+  width: 12vh;
+  height: 5.1vh;
+}
+header #themeButtons .switch img {
+  position: absolute;
+  width: 3.9vh;
+  top: 0.6vh;
+  transition: opacity 0.3s;
+}
+header #themeButtons .switch img#light {
+  left: 0.6vh;
+  opacity: 0;
+}
+header #themeButtons .switch img#dark {
+  filter: brightness(0);
+  right: 0.8vh;
+}
+header #themeButtons .switch .slider {
+  border-radius: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+header #themeButtons .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 4.5vh;
+  width: 4.5vh;
+  left: 0.3vh;
+  bottom: 0.3vh;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+header #themeButtons .switch input {
+  visibility: hidden;
+}
+header #themeButtons .switch input:checked + .slider {
+  background-color: #20182e;
+}
+header #themeButtons .switch input:checked + .slider:before {
+  transform: translateX(6.7vh);
+  background-color: #696b81;
+}
+header #themeButtons .switch input:checked + .slider + #dark {
+  opacity: 0;
+}
+header #themeButtons .switch input:checked + .slider + #dark + #light {
+  opacity: 100%;
+}
+header #themeButtons .switch input:hover + .slider + #dark + #light + #themeLabel {
+  opacity: 1;
+}
+header #themeButtons #themeLabel {
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 1.5vh;
+  width: 10.6vh;
+  position: absolute;
+  top: -2vh;
+  left: 0.4vh;
+  text-align: center;
+}
+header #themeButtons #themeLabel.dark {
+  color: white;
+}
+header #profilePicture {
+  position: fixed;
+  top: 20px;
+  left: 5vw;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 40vh;
+  min-height: 20vh;
+  max-height: 40vh;
+  z-index: 2;
+}
+header #profilePicture.dark {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+header nav button {
+  float: right;
+  display: inline;
+  border: 0;
+  height: 100%;
+  padding: 0 30px;
+  transform: skewX(-30deg);
+  margin: 0 1px;
+  background-position: center;
+  transition: background 0.4s;
+}
+header nav button.dark {
+  background-color: #20182e;
+  color: white;
+}
+header nav button p {
+  transform: skewX(30deg);
+}
+header nav button#github {
+  transform: skewX(0);
+  height: 4vh;
+  margin: 3vh 30px;
+  padding: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+}
+header nav button:hover {
+  background: #eee radial-gradient(circle, transparent 1%, #eee 1%) center/15000%;
+}
+header nav button:hover.dark {
+  background: #271d36 radial-gradient(circle, transparent 1%, #271d36 1%) center/15000%;
+}
+header nav button:active {
+  background-color: #fff;
+  background-size: 100%;
+  transition: background 0s;
+}
+header nav button:active.dark {
+  background-color: #20182e;
+  background-size: 100%;
+  transition: background 0s;
+}
+@media (min-width: 900px) {
+  header #prideFlag {
+    float: right;
+    display: inline-grid;
+    height: 10vh;
+    width: 20vw;
+    transform: skewX(-30deg);
+    margin-right: 10vw;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  header #prideFlag {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 900px) {
+  header #prideFlag #red {
+    background-color: red;
+  }
+  header #prideFlag #red:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s;
+    z-index: 1;
+  }
+}
+@media (min-width: 900px) {
+  header #prideFlag #orange {
+    background-color: orange;
+  }
+  header #prideFlag #orange:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s;
+    z-index: 1;
+  }
+}
+@media (min-width: 900px) {
+  header #prideFlag #yellow {
+    background-color: yellow;
+  }
+  header #prideFlag #yellow:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s;
+    z-index: 1;
+  }
+}
+@media (min-width: 900px) {
+  header #prideFlag #green {
+    background-color: green;
+  }
+  header #prideFlag #green:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s;
+    z-index: 1;
+  }
+}
+@media (min-width: 900px) {
+  header #prideFlag #blue {
+    background-color: blue;
+  }
+  header #prideFlag #blue:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s;
+    z-index: 1;
+  }
+}
+@media (min-width: 900px) {
+  header #prideFlag #purple {
+    background-color: purple;
+  }
+  header #prideFlag #purple:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s;
+    z-index: 1;
+  }
+}
+@media (min-width: 900px) {
+  header #prideFlag.dark {
+    border-color: white;
+  }
+}
+
+body {
+  height: 2000px;
+}
+
+/*# sourceMappingURL=style.css.map */

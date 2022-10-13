@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256mm"
+   height="256mm"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="light.svg"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+       id="path232"
+       cx="128"
+       cy="128"
+       r="64" />
+    <g
+       id="g1079"
+       inkscape:label="Rays"
+       style="stroke-width:5;stroke-dasharray:none">
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 128.9925,0 V 50"
+         id="path1040" />
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="m 128.99242,206 v 50"
+         id="path1060" />
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 50,128.9925 H 0"
+         id="path1071" />
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 256,128.9925 H 206"
+         id="path1073" />
+    </g>
+    <g
+       id="g1089"
+       inkscape:label="Rays"
+       transform="rotate(30,130.06547,127.13407)"
+       style="stroke-width:5;stroke-dasharray:none">
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 128.9925,0 V 50"
+         id="path1081" />
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="m 128.99242,206 v 50"
+         id="path1083" />
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 50,128.9925 H 0"
+         id="path1085" />
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 256,128.9925 H 206"
+         id="path1087" />
+    </g>
+    <g
+       id="g1099"
+       inkscape:label="Rays"
+       transform="rotate(150,128.07577,127.40471)"
+       style="stroke-width:5;stroke-dasharray:none">
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 128.9925,0 V 50"
+         id="path1091" />
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="m 128.99242,206 v 50"
+         id="path1093" />
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 50,128.9925 H 0"
+         id="path1095" />
+      <path
+         style="fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 256,128.9925 H 206"
+         id="path1097" />
+    </g>
+  </g>
+</svg>
