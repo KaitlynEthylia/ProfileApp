@@ -6,32 +6,20 @@ $main-font: 'candara', sans-serif;
     margin: 0;
     padding: 0;
     font-family: $main-font;
-    font-size: 16pt;
     transition: background-color 0.2s;
-}
-
-body.dark {
-    background-color: #20182e; 
+    box-sizing: border-box;
 }
 
 header {
+    * {
+        font-size: 2.5vh;
+    }
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     height: 10vh;
 
-    &.dark {
-        background-color: #302d3d;
-    }
-
-    div {
-        display: inline;
-    }
-
-    nav {
-        display: inline;
-    }
     #themeButtons {
         display: inline-flex;
         align-items: center;
@@ -84,7 +72,7 @@ header {
                 }
             }
 
-            input {
+            input[type="checkbox"] {
                 visibility: hidden;
                 &:checked + .slider {
                     background-color: #20182e;
@@ -119,10 +107,6 @@ header {
             top: -2vh;
             left: 0.4vh;
             text-align: center;
-
-            &.dark {
-                color: white;
-            }
         }
     }
 
@@ -137,60 +121,48 @@ header {
         min-height: 20vh;
         max-height: 40vh;
         z-index: 2;
-        &.dark {
-            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-        }
     }
 
-    nav button {
-        float: right;
+    nav { 
         display: inline;
-        border: 0;
-        height: 100%;
-        padding: 0 30px;
-        transform: skewX(-30deg);
-        margin: 0 1px;
-        background-position: center;
-        transition: background 0.4s;
 
-        &.dark {
-            background-color: #20182e;
-            color:white
-        }
+        button {
+            float: right;
+            display: inline;
+            border: 0;
+            height: 100%;
+            padding: 0 30px;
+            transform: skewX(-30deg);
+            margin: 0 1px;
+            background-position: center;
+            transition: background 0.4s;
 
-        p {
-            transform: skewX(30deg);
-        }
-
-        &#github {
-            transform: skewX(0);
-            height: 4vh;
-            margin: calc(3vh) 30px;
-            padding: 0 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
-        }
-
-        &:hover {
-            background: #eee radial-gradient(circle, transparent 1%, #eee 1%) center/15000%;
-            &.dark {
-                background: #271d36 radial-gradient(circle, transparent 1%, #271d36 1%) center/15000%;
+            p {
+                transform: skewX(30deg);
             }
-        }
 
-        &:active {
-            &.dark {
-                background-color: #20182e;
+            &#github {
+                transform: skewX(0);
+                height: 4vh;
+                margin: calc(3vh) 30px;
+                padding: 0 15px;
+                border-radius: 10px;
+                box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+            }
+
+            &:hover {
+                background: #eee radial-gradient(circle, transparent 1%, #eee 1%) center/15000%;
+            }
+
+            &:active {
+                background-color: #fff;
                 background-size: 100%;
                 transition: background 0s;
             }
-            background-color: #fff;
-            background-size: 100%;
-            transition: background 0s;
         }
     }
     
-    @media(min-width: 900px) {
+    @media(min-width: 960px) {
         
         @mixin hoverBorder {
             &:hover {
@@ -219,10 +191,6 @@ header {
 
             border-left: 3px solid black;
             border-right: 3px solid black;
-
-            &.dark {
-                border-color: white;
-            }
         }
     }
 }
