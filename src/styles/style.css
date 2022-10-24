@@ -233,20 +233,19 @@ section {
   height: 90vh;
 }
 
+#mainPage {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: start;
+}
 #mainPage .column {
-  border: solid;
-  display: inline-block;
   height: 100%;
 }
 #mainPage .column#overview {
   width: calc(40vh + 8vw);
 }
-#mainPage .project {
-  border: 2px solid black;
-  border-radius: 30px;
-  margin: 15px;
-}
 #mainPage #languages {
+  position: absolute;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.8vw;
   background-color: #eee;
@@ -281,6 +280,84 @@ section {
   position: relative;
   left: calc(6vw + 20vh - 50%);
   text-align: center;
+}
+#mainPage .project {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  background-color: #eee;
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+#mainPage .project.right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+#mainPage .project img {
+  width: 20vh;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+#mainPage .project img:hover {
+  transform: scale(1.05);
+}
+#mainPage .project div p {
+  font-size: 2vh;
+}
+#mainPage #overview .project {
+  margin-top: calc(40vh + 10px);
+}
+#mainPage h1 {
+  margin-top: 4vh;
+  font-size: 8vh;
+  font-weight: lighter;
+}
+#mainPage p {
+  font-size: 1.5vh;
+}
+#mainPage #images {
+  padding: 40px;
+  float: right;
+}
+#mainPage #images :first-child {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#mainPage #images :last-child {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+#mainPage #images img {
+  margin: 10px;
+  width: 45vh;
+  display: block;
+  aspect-ratio: 16/9;
+  transition: 0.1s;
+}
+#mainPage #images img:hover {
+  transform: scale(1.05);
+}
+#mainPage .navButton {
+  padding-top: 3vh;
+  display: grid;
+  margin: auto;
+  width: 5vh;
+  transition: 0.1s;
+}
+#mainPage .navButton h4 {
+  font-size: 1.5vh;
+  grid-row: 1;
+  text-align: center;
+}
+#mainPage .navButton a img {
+  grid-row: 2;
+  margin: 10%;
+  width: 80%;
+}
+#mainPage .navButton:hover {
+  transform: scale(1.1) translateY(-1vh);
 }
 
 /*# sourceMappingURL=style.css.map */
