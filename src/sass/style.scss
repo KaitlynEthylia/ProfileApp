@@ -141,13 +141,17 @@ header {
             transition: background 0.4s;
             background-color: #ddd;
 
-            a {
+            a{
                 display: inline-block;
-                transform: skewX(30deg);
                 color: black;
                 text-decoration: none;
                 &:visited {
                     color: black;
+                    text-decoration: none;
+                }
+
+                &.skew {
+                    transform: skewX(30deg);
                 }
             }
 
@@ -211,6 +215,23 @@ section {
 }
 
 #mainPage {
+    .column {
+        // temporary border
+        border: solid;
+        display: inline-block;
+        height: 100%;
+
+        &#overview {
+            width: calc(40vh + 8vw);
+        }
+    }
+
+    .project {
+        border: 2px solid black;
+        border-radius: 30px;
+        margin: 15px;
+    }
+
     #languages {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-radius: 0.8vw;
@@ -218,7 +239,8 @@ section {
         width: 6.5vw;
         transform: translateX(-1.4vw);
         margin-top: 15px;
-        padding: .1vw;
+        padding: .2vw;
+        margin-bottom: 10vh;
         h4 {
             margin-left: 1.5vw;
             font-size: 1vw;
@@ -235,6 +257,16 @@ section {
                 transform: translateX(1.3vw) scale(1.1);
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
             }
+        }
+    }
+    div#pronouns {
+        position: absolute;
+        top: calc(40vh + 20px);
+        h4 {
+            font-size: 2.5vh;
+            position: relative;
+            left: calc(6vw + 20vh - 50%);
+            text-align: center;
         }
     }
 }

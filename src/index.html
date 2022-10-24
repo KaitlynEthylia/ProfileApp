@@ -9,18 +9,18 @@
                 <label class="switch">
                     <input type="checkbox" id="input"/>
                     <span class="slider"></span>
-                    <img id="dark" src="resources/images/night.svg"/>
-                    <img id="light" src="resources/images/light.svg"/>
+                    <img id="dark" src="resources/svgs/night.svg"/>
+                    <img id="light" src="resources/svgs/light.svg"/>
                     <label id="themeLabel">Dark Theme</label>
                 </label>
             </span>
             <img id="profilePicture" src="./resources/images/pfp.webp"/>
             
             <nav>
-                <button id="github"><span>To GitHub</span></button>
-                <button><a href="#besties">Besties</a></button>
-                <button><a href="#socials">Socials</a></button>
-                <button><a href="#about">About</a></button>
+                <button id="github"><a href="https://github.com/KaitlynEthylia">To GitHub</a></button>
+                <button><a href="#besties" class="skew">Besties</a></button>
+                <button><a href="#socials" class="skew">Socials</a></button>
+                <button><a href="#about" class="skew">About</a></button>
             </nav>
             
             <span id="prideFlag">
@@ -33,22 +33,24 @@
             </span>
         </header>
         <section id="mainPage">
-            <div class="column">
+            <div class="column" id="overview">
                 <div id="languages">
                     <h4>Speaks</h4>
-                    <img src="resources/images/union_flag.svg" alt="Union Flag">
+                    <img src="resources/svgs/union_flag.svg" alt="Union Flag">
                     <h4>Learning</h4>
-                    <img src="resources/images/wales.svg" alt="Welsh Flag">
-                    <img src="resources/images/germany.svg" alt="German Flag">
+                    <img src="resources/svgs/wales.svg" alt="Welsh Flag">
+                    <img src="resources/svgs/germany.svg" alt="German Flag">
                 </div>
-                <h4>• Fae / Faer • She / Her •<br/>• They / Them •</h4>
+                <div id="pronouns">
+                    <h4>• Fae / Faer • She / Her •<br/>• They / Them •</h4>
+                </div>
                 <div class="project">
                     <p class="description"></p>
                     <img src="" alt="">
                 </div>
                 <p>[ Something should go here but I'm not sure what. ]</p>
             </div>
-            <div class="column">
+            <div class="column" id="description">
                 <h1>@Kaitlyn-Ethylia Anzcari</h1>
                 <p>Lorum ipsul dolor sit amet.</p>
                 <div class="project">
@@ -64,7 +66,7 @@
                     <a href="#about"></a>
                 </div>
             </div>
-            <div class="column">
+            <div class="column" id="images">
                 <div class="images">
                     <img src="" alt=""/>
                     <img src="" alt=""/>

@@ -125,12 +125,15 @@ header nav button {
 }
 header nav button a {
   display: inline-block;
-  transform: skewX(30deg);
   color: black;
   text-decoration: none;
 }
 header nav button a:visited {
   color: black;
+  text-decoration: none;
+}
+header nav button a.skew {
+  transform: skewX(30deg);
 }
 header nav button#github {
   transform: skewX(0);
@@ -230,6 +233,19 @@ section {
   height: 90vh;
 }
 
+#mainPage .column {
+  border: solid;
+  display: inline-block;
+  height: 100%;
+}
+#mainPage .column#overview {
+  width: calc(40vh + 8vw);
+}
+#mainPage .project {
+  border: 2px solid black;
+  border-radius: 30px;
+  margin: 15px;
+}
 #mainPage #languages {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.8vw;
@@ -237,7 +253,8 @@ section {
   width: 6.5vw;
   transform: translateX(-1.4vw);
   margin-top: 15px;
-  padding: 0.1vw;
+  padding: 0.2vw;
+  margin-bottom: 10vh;
 }
 #mainPage #languages h4 {
   margin-left: 1.5vw;
@@ -254,6 +271,16 @@ section {
 #mainPage #languages img:hover {
   transform: translateX(1.3vw) scale(1.1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+#mainPage div#pronouns {
+  position: absolute;
+  top: calc(40vh + 20px);
+}
+#mainPage div#pronouns h4 {
+  font-size: 2.5vh;
+  position: relative;
+  left: calc(6vw + 20vh - 50%);
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
