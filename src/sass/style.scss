@@ -13,14 +13,15 @@ $main-font: 'candara', sans-serif;
 }
 
 header {
-    * {
+* {
         font-size: 2.5vh;
     }
-    background-color: white;
+    background-color: #eee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     height: 10vh;
+    z-index: 1;
 
     #themeButtons {
         display: inline-flex;
@@ -115,7 +116,7 @@ header {
     #profilePicture {
         position: fixed;
         top: 20px;
-        left: 5vw;
+        left: 6vw;
         border-radius: 50%;
         border: 1px solid black;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -138,6 +139,7 @@ header {
             margin: 0 1px;
             background-position: center;
             transition: background 0.4s;
+            background-color: #ddd;
 
             a {
                 display: inline-block;
@@ -159,7 +161,7 @@ header {
             }
 
             &:hover {
-                background: #eee radial-gradient(circle, transparent 1%, #eee 1%) center/15000%;
+                background: #e4e4e4 radial-gradient(circle, transparent 1%, #eee 1%) center/15000%;
             }
 
             &:active {
@@ -205,9 +207,34 @@ header {
 
 section {
     height: 90vh;
-    border: 1px solid;
+    //border: 1px solid;
 }
 
 #mainPage {
-    
+    #languages {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 0.8vw;
+        background-color: #eee;
+        width: 6.5vw;
+        transform: translateX(-1.4vw);
+        margin-top: 15px;
+        padding: .1vw;
+        h4 {
+            margin-left: 1.5vw;
+            font-size: 1vw;
+        }
+        img {
+            width: 5vw;
+            display: block;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 0.8vw;
+            margin: 0.3vw;
+            transition: 0.2s;
+
+            &:hover {
+                transform: translateX(1.3vw) scale(1.1);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
 }
