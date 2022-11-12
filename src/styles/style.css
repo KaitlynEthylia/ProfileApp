@@ -107,6 +107,10 @@ header #profilePicture {
   min-height: 20vh;
   max-height: 40vh;
   z-index: 2;
+  transition: 0.05s;
+}
+header #profilePicture:hover {
+  transform: scale(1.05);
 }
 header nav {
   display: inline;
@@ -303,6 +307,9 @@ section {
 #mainPage .project img:hover {
   transform: scale(1.05);
 }
+#mainPage .project div h3 {
+  font-size: 2.5vh;
+}
 #mainPage .project div p {
   font-size: 2vh;
 }
@@ -358,6 +365,33 @@ section {
 }
 #mainPage .navButton:hover {
   transform: scale(1.1) translateY(-1vh);
+}
+
+#about .flags {
+  margin-top: 2vh;
+  margin-right: 1vw;
+  float: right;
+}
+#about .flags .gay {
+  margin: 1vh;
+}
+#about .flags .gay img {
+  height: 23vh;
+  border: white solid 0.6vw;
+  border-radius: 30px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 1vh;
+  transition: transform 0.2s;
+}
+#about .flags .gay img:hover {
+  transform: scale(1.1);
+}
+#about .flags .gay h3 {
+  font-size: 2.5vh;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: gray;
+  letter-spacing: 1vh;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 42" width="800" height="480">
+	<path fill="#7ca187" d="M0, 0H 70V 6H 0z"/>
+	<path fill="#9db48d" d="M0, 6H 70V 12H 0z"/>
+	<path fill="#dbdcb5" d="M0, 12H 70V 18H 0z"/>
+	<path fill="#ffffff" d="M0, 18H 70V 24H 0z"/>
+	<path fill="#fca2c6" d="M0, 24H 70V 30H 0z"/>
+	<path fill="#da8ae3" d="M0, 30H 70V 36H 0z"/>
+	<path fill="#aa7edd" d="M0, 36H 70V 42H 0z"/>
+</svg>

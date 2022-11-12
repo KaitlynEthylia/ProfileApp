@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <link rel="stylesheet" href="styles/style.css"/>
         <meta charset="UTF-8">
     </head>
@@ -15,8 +17,7 @@
                     <label id="themeLabel">Dark Theme</label>
                 </label>
             </span>
-            <img id="profilePicture" src="./resources/images/pfp.webp"/>
-            
+            <a href="#mainPage"><img id="profilePicture" src="./resources/images/pfp.webp"/></a>
             <nav>
                 <button id="github"><a href="https://github.com/KaitlynEthylia">To GitHub</a></button>
                 <button><a href="#besties" class="skew">Besties</a></button>
@@ -37,10 +38,10 @@
             <div class="column" id="overview">
                 <div id="languages">
                     <h4>Speaks</h4>
-                    <img src="resources/svgs/union_flag.svg" alt="Union Flag">
+                    <img src="resources/svgs/flag_union_flag.svg" alt="Union Flag">
                     <h4>Learning</h4>
-                    <img src="resources/svgs/wales.svg" alt="Welsh Flag">
-                    <img src="resources/svgs/germany.svg" alt="German Flag">
+                    <img src="resources/svgs/flag_wales.svg" alt="Welsh Flag">
+                    <img src="resources/svgs/flag_germany.svg" alt="German Flag">
                 </div>
                 <div id="pronouns">
                     <h4>• Fae / Faer • She / Her •<br/>• They / Them •</h4>
@@ -52,7 +53,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis autem minima!</p>
                     </div>
                 </div>
-                <p>[ Something should go here but I'm not sure what. ]</p>
             </div>
             <div class="column">
                 <h1>@Kaitlyn-Ethylia</h1>
@@ -84,10 +84,30 @@
                 <img src="resources/images/placeholder.jpg" alt="placeholder"/>
             </div>
         </section>
-        <section id="about"></section>
+        <section id="about">
+            <div class="flags">
+                <div class="gay" data-aos="fade-left">
+                    <img src="resources/svgs/pride_trans.svg" alt="Transgender Flag">
+                    <h3>Transgender</h3>
+                </div>
+                <div class="gay" data-aos="fade-left">
+                    <img src="resources/svgs/pride_fae.svg" alt="Genderfae Flag">
+                    <h3>Genderfae</h3>
+                </div>
+                <div class="gay" data-aos="fade-left">
+                    <img src="resources/svgs/pride_omni.svg" alt="Omnisexual Flag">
+                    <h3>Omnisexual</h3>
+                </div>
+            </div>
+        </section>
         <section id="socials"></section>
         <section id="besties"></section>
         <script src="scripts/scroll.js"></script>
         <script src="scripts/themes.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
