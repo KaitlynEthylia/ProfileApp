@@ -305,7 +305,7 @@ section {
 }
 #mainPage div#pronouns {
   position: absolute;
-  top: calc(40vh + 20px);
+  top: calc(30vh + 20px);
 }
 #mainPage div#pronouns h4 {
   font-size: 2.5vh;
