@@ -297,8 +297,8 @@ section {
         }
 
 		div {
-            h3 { font-size: 2.5vh; }
-            p { font-size: 2vh; }
+            h3 { font-size: 2vw; }
+            p { font-size: 1vw; }
         }
     }
 
@@ -396,6 +396,58 @@ section {
                 font-weight: lighter;
                 color: gray;
                 letter-spacing: 1vh;
+            }
+        }
+    }
+}
+
+#socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #social-list {
+        a {
+            text-decoration: none;
+            padding: 2vh;
+            
+            img {
+                transition: filter 0.4s;
+                filter: saturate(0) brightness(0.1);
+                width: 5vh;
+            }
+
+            &::before, &::after {
+                color: var(--color);
+                position: absolute;
+                
+                width: 100%;
+                right: 0;
+                text-align: center;
+
+                opacity: 0;
+                transition: opacity 0.2s;
+            }
+
+            &::before {
+                content: var(--name);
+                top: 238vh;
+
+                font-size: 4vh;
+                font-weight: bolder;
+            }
+            &::after {
+                content: var(--subtitle);
+                top: 243vh;
+            }
+        }
+
+        a:hover {
+            &::before, &::after {
+                opacity: 1;
+            }
+
+            img {
+                filter: none;
             }
         }
     }

@@ -308,10 +308,10 @@ section {
   transform: scale(1.05);
 }
 #mainPage .project div h3 {
-  font-size: 2.5vh;
+  font-size: 2vw;
 }
 #mainPage .project div p {
-  font-size: 2vh;
+  font-size: 1vw;
 }
 #mainPage #overview .project {
   margin-top: calc(40vh + 10px);
@@ -392,6 +392,46 @@ section {
   font-weight: lighter;
   color: gray;
   letter-spacing: 1vh;
+}
+
+#socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#socials #social-list a {
+  text-decoration: none;
+  padding: 2vh;
+}
+#socials #social-list a img {
+  transition: filter 0.4s;
+  filter: saturate(0) brightness(0.1);
+  width: 5vh;
+}
+#socials #social-list a::before, #socials #social-list a::after {
+  color: var(--color);
+  position: absolute;
+  width: 100%;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+#socials #social-list a::before {
+  content: var(--name);
+  top: 238vh;
+  font-size: 4vh;
+  font-weight: bolder;
+}
+#socials #social-list a::after {
+  content: var(--subtitle);
+  top: 243vh;
+}
+#socials #social-list a:hover::before, #socials #social-list a:hover::after {
+  opacity: 1;
+}
+#socials #social-list a:hover img {
+  filter: none;
 }
 
 /*# sourceMappingURL=style.css.map */
