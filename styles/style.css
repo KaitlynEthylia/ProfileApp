@@ -414,6 +414,7 @@ section {
   width: 100%;
   right: 0;
   text-align: center;
+  visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -428,6 +429,7 @@ section {
   top: 243vh;
 }
 #socials #social-list a:hover::before, #socials #social-list a:hover::after {
+  visibility: visible;
   opacity: 1;
 }
 #socials #social-list a:hover img {

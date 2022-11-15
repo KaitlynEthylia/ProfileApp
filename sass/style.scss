@@ -409,7 +409,7 @@ section {
         a {
             text-decoration: none;
             padding: 2vh;
-            
+
             img {
                 transition: filter 0.4s;
                 filter: saturate(0) brightness(0.1);
@@ -424,6 +424,7 @@ section {
                 right: 0;
                 text-align: center;
 
+                visibility: hidden;
                 opacity: 0;
                 transition: opacity 0.2s;
             }
@@ -443,6 +444,7 @@ section {
 
         a:hover {
             &::before, &::after {
+                visibility: visible;
                 opacity: 1;
             }
 
