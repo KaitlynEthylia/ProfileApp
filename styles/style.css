@@ -55,6 +55,7 @@ header #themeButtons .switch .slider {
   bottom: 0;
   background-color: #ccc;
   transition: 0.4s;
+  box-shadow: 0 0 8px 1px inset rgba(0, 0, 0, 0.3);
 }
 header #themeButtons .switch .slider:before {
   position: absolute;
@@ -163,8 +164,7 @@ header nav button:active {
     width: 20vw;
     transform: skewX(-30deg);
     margin-right: 10vw;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
   }
 }
 @media (min-width: 960px) and (max-width: 1200px) {
@@ -233,8 +233,36 @@ header nav button:active {
   }
 }
 
+.navbutton {
+  position: absolute;
+  bottom: 3vh;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  pointer-events: none;
+  transition: transform 0.2s;
+}
+.navbutton img {
+  margin: auto;
+  width: 4vh;
+  pointer-events: all;
+}
+.navbutton:hover {
+  transform: scale(1.2) translateY(-1vh);
+}
+.navbutton::before {
+  content: attr(text);
+  margin: auto;
+}
+
 section {
   height: 90vh;
+  overflow: hidden;
+  position: relative;
 }
 
 #mainPage {
@@ -346,31 +374,11 @@ section {
 #mainPage #images img:hover {
   transform: scale(1.05);
 }
-#mainPage .navButton {
-  padding-top: 3vh;
-  display: grid;
-  margin: auto;
-  width: 5vh;
-  transition: 0.1s;
-}
-#mainPage .navButton h4 {
-  font-size: 1.5vh;
-  grid-row: 1;
-  text-align: center;
-}
-#mainPage .navButton a img {
-  grid-row: 2;
-  margin: 10%;
-  width: 80%;
-}
-#mainPage .navButton:hover {
-  transform: scale(1.1) translateY(-1vh);
-}
 
 #about .flags {
+  float: right;
   margin-top: 2vh;
   margin-right: 1vw;
-  float: right;
 }
 #about .flags .gay {
   margin: 1vh;
@@ -394,10 +402,11 @@ section {
   letter-spacing: 1vh;
 }
 
-#socials {
+#socials #social-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 #socials #social-list a {
   text-decoration: none;
@@ -416,17 +425,17 @@ section {
   text-align: center;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.4s;
 }
 #socials #social-list a::before {
   content: var(--name);
-  top: 238vh;
+  top: 48vh;
   font-size: 4vh;
   font-weight: bolder;
 }
 #socials #social-list a::after {
   content: var(--subtitle);
-  top: 243vh;
+  top: 52vh;
 }
 #socials #social-list a:hover::before, #socials #social-list a:hover::after {
   visibility: visible;
