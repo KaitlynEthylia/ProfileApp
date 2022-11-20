@@ -449,6 +449,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: visible;
 }
 #reviews #final {
   background-color: #eee;

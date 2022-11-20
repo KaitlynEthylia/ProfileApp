@@ -13,8 +13,6 @@ document.addEventListener('aos:in:reviews', () => {
     }
 });
 
-
-console.log("a");
 reviews.forEach(element => {
     const stars = element.getAttribute("stars");
     sum += parseInt(stars);
@@ -39,7 +37,6 @@ document.addEventListener('aos:in', ({ detail }) => {
                 let subdoc = getSubDocument(child);
                 [...subdoc.getElementsByTagName("stop")].forEach(element => {
                     for (let i = 0; i <= 1; i += 0.01) {
-                        //console.log(i);
                         setTimeout(() => {
                             element.setAttribute("offset", i.toString())
                         }, 300 * i + index * 200);
@@ -63,9 +60,6 @@ document.addEventListener('aos:in', ({ detail }) => {
             arr[int - 1] += 1;
         })
         bars.forEach(bar => {
-            console.log(bar);
-            console.log(bar.getElementById("bar"));
-            console.log(arr);
             const int = parseInt(bar.getElementsByTagName("text").item(0).innerHTML);
             bar.getElementById("bar").setAttribute("width", `${arr[int - 1] * 10 / reviews.length}vw`);
         })
