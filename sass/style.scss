@@ -490,6 +490,7 @@ section {
 
         embed {
             height: 5vw;
+            filter: drop-shadow(0 1px 4px #0004);
         }
 
         h1 {
@@ -499,7 +500,8 @@ section {
 
         svg {
             margin: 1vh;
-            display: block  ;
+            display: block;
+            filter: drop-shadow(0 1px 2px #0004);
         }
     }
 
@@ -523,6 +525,7 @@ section {
                 height: 4vh;
                 margin-bottom: 1vh;
                 margin-right: 1vh;
+                filter: drop-shadow(0 1px 2px #0004);
             }
             
             h3 {

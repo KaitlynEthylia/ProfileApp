@@ -7,12 +7,6 @@ let amount = 0;
 
 AOS.init();
 
-document.addEventListener('aos:in:reviews', () => {
-    for (let i = 0; i < sum / amount; i+=0.1) {
-        setTimeout(() => { element.innerHTML = i.toFixed(1); }, 300 * i);
-    }
-});
-
 reviews.forEach(element => {
     const stars = element.getAttribute("stars");
     sum += parseInt(stars);
@@ -48,10 +42,13 @@ document.addEventListener('aos:in', ({ detail }) => {
     }
     if(detail.id === "final") {
         for (let i = 0; i <= sum / amount; i+=0.01) {
-            setTimeout(() => { element.innerHTML = i.toFixed(1); }, 400 * i);
-            setTimeout(() => [...getSubDocument(rating).getElementsByTagName("stop")].forEach(element => {
-                element.setAttribute("offset", i.toString())
-            }), 1500 * i);
+            setTimeout(() => {
+                element.innerHTML = i.toFixed(1);
+                [...getSubDocument(rating).getElementsByTagName("stop")].forEach(element => {
+                    element.setAttribute("offset", (i / 5).toString())
+                });
+            }, 400 * i);
+            console.log(i);
         }
         const bars = [...detail.getElementsByTagName("svg")];
         let arr = [0, 0, 0, 0, 0];
