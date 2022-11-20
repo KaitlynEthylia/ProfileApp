@@ -487,8 +487,8 @@ section {
         border-radius: 20px;
         box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.2);
 
-        img {
-            width: 5vw;
+        embed {
+            height: 5vw;
         }
 
         h1 {
@@ -518,7 +518,7 @@ section {
             display: flex;
             align-items: center;
 
-            img {
+            embed {
                 height: 4vh;
                 margin-bottom: 1vh;
                 margin-right: 1vh;

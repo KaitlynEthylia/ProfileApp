@@ -457,8 +457,8 @@ section {
   border-radius: 20px;
   box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.2);
 }
-#reviews #final img {
-  width: 5vw;
+#reviews #final embed {
+  height: 5vw;
 }
 #reviews #final h1 {
   font-size: 10vh;
@@ -482,7 +482,7 @@ section {
   display: flex;
   align-items: center;
 }
-#reviews .review div img {
+#reviews .review div embed {
   height: 4vh;
   margin-bottom: 1vh;
   margin-right: 1vh;
