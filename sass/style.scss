@@ -1,5 +1,9 @@
 $main-font: 'candara', sans-serif;
 
+@font-face {
+    font-family: 'CaskaydiaCove'; /*a name to be used later*/
+    src: url('../resources/fonts/CaskaydiaCove.ttf'); /*URL to font*/
+}
 
 
 * {
@@ -385,10 +389,105 @@ section {
 }
 
 #about {
+    .column {
+        word-wrap: break-word;
+        width: 33vw;
+        text-align: center;
+
+        h1 {
+            text-align: left;
+            font-size: 6vh;
+            font-weight: lighter;
+            margin: 3vh;
+        }
+        p { margin: 2vh; }
+
+        .logos {
+            margin: 1vh;
+            .section {
+                padding: 1.5vw;
+            }
+            embed {
+                height: 8vh;
+                filter: drop-shadow(0 1px 4px #0008);
+                transition: transform 0.2s;
+                &:hover { transform: scale(1.1); }
+            }
+        }
+    }
+
+    #content {
+        margin-left: 2vw;
+        position: absolute;
+        left: 33vw;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin: 3vw 0;
+        }
+
+        .code {
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            background-color: #272747;
+            height: 30vh;
+            border-radius: 0.7vw;
+            overflow: hidden;
+            box-shadow: 0 1px 8px 4px rgba(0, 0, 0, 0.4);
+            opacity: 0.9;
+
+            .codeHeader {
+                background-color: #333356;
+                width: 100%;
+                text-align: left;
+                box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.2);
+            }
+            svg{
+                border-radius: 50%;
+                margin: 0.2vw;
+                box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.2);
+
+                transition: filter 0.2s;
+                &:hover {
+                    filter: saturate(0.8) brightness(0.8);
+                }
+            }
+
+            * { font-family: 'CaskaydiaCove', monospace; }
+
+            pre code {
+                color: white;
+                float: left;
+                text-align: left;
+                margin: 1vw;
+                span {
+                    &.selector-id { color: hotpink; }
+                    &.key { color: lightblue; }
+                    &.keyword { color: lightgoldenrodyellow; }
+                    &.value { color: lightgreen; }
+                    &.function { color: lightgoldenrodyellow; }
+                    &.bracket { color: yellow; }
+                    &.pseudo-class { color: cornflowerblue; }
+                }
+
+                transition: transform 0.2s;
+                &:hover { transform: scale(1.05); }
+            }
+
+            transition: transform 0.2s;
+            &:hover { transform: scale(1.05); }
+        }
+    }
+
     .flags {
-        float: right;
-        margin-top: 2vh;
-        margin-right: 1vw;
+        position: absolute;
+        right: 0;
+        top: 0;
         
         .gay {
             margin: 1vh;
@@ -503,6 +602,8 @@ section {
             display: block;
             filter: drop-shadow(0 1px 2px #0004);
         }
+        transition: transform 0.2s;
+        &:hover { transform: scale(1.1); }
     }
 
     .review {
@@ -546,5 +647,6 @@ section {
         footer {
             margin-top: 1vh;
         }
+        &:hover { transform: scale(1.1); }
     }
 }

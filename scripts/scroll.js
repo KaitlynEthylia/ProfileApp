@@ -15,7 +15,7 @@ document.addEventListener('scroll', function (e) {
 
     var height = (300 - scroll) / 25 + 40;
     var opacity = (300 - scroll) / (500/0.6) + 1;
-    var distance = (scroll - 300) / 75 + 6;
+    var distance = (scroll - 300) / 40 + 6;
 
     
     ele.style.height = height + "vh";

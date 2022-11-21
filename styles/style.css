@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "CaskaydiaCove"; /*a name to be used later*/
+  src: url("../resources/fonts/CaskaydiaCove.ttf"); /*URL to font*/
+}
 * {
   margin: 0;
   padding: 0;
@@ -375,10 +379,115 @@ section {
   transform: scale(1.05);
 }
 
+#about .column {
+  word-wrap: break-word;
+  width: 33vw;
+  text-align: center;
+}
+#about .column h1 {
+  text-align: left;
+  font-size: 6vh;
+  font-weight: lighter;
+  margin: 3vh;
+}
+#about .column p {
+  margin: 2vh;
+}
+#about .column .logos {
+  margin: 1vh;
+}
+#about .column .logos .section {
+  padding: 1.5vw;
+}
+#about .column .logos embed {
+  height: 8vh;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.5333333333));
+  transition: transform 0.2s;
+}
+#about .column .logos embed:hover {
+  transform: scale(1.1);
+}
+#about #content {
+  margin-left: 2vw;
+  position: absolute;
+  left: 33vw;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about #content p {
+  margin: 3vw 0;
+}
+#about #content .code {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #272747;
+  height: 30vh;
+  border-radius: 0.7vw;
+  overflow: hidden;
+  box-shadow: 0 1px 8px 4px rgba(0, 0, 0, 0.4);
+  opacity: 0.9;
+  transition: transform 0.2s;
+}
+#about #content .code .codeHeader {
+  background-color: #333356;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.2);
+}
+#about #content .code svg {
+  border-radius: 50%;
+  margin: 0.2vw;
+  box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.2);
+  transition: filter 0.2s;
+}
+#about #content .code svg:hover {
+  filter: saturate(0.8) brightness(0.8);
+}
+#about #content .code * {
+  font-family: "CaskaydiaCove", monospace;
+}
+#about #content .code pre code {
+  color: white;
+  float: left;
+  text-align: left;
+  margin: 1vw;
+  transition: transform 0.2s;
+}
+#about #content .code pre code span.selector-id {
+  color: hotpink;
+}
+#about #content .code pre code span.key {
+  color: lightblue;
+}
+#about #content .code pre code span.keyword {
+  color: lightgoldenrodyellow;
+}
+#about #content .code pre code span.value {
+  color: lightgreen;
+}
+#about #content .code pre code span.function {
+  color: lightgoldenrodyellow;
+}
+#about #content .code pre code span.bracket {
+  color: yellow;
+}
+#about #content .code pre code span.pseudo-class {
+  color: cornflowerblue;
+}
+#about #content .code pre code:hover {
+  transform: scale(1.05);
+}
+#about #content .code:hover {
+  transform: scale(1.05);
+}
 #about .flags {
-  float: right;
-  margin-top: 2vh;
-  margin-right: 1vw;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 #about .flags .gay {
   margin: 1vh;
@@ -457,6 +566,7 @@ section {
   padding: 0.5vw;
   border-radius: 20px;
   box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
 }
 #reviews #final embed {
   height: 5vw;
@@ -470,6 +580,9 @@ section {
   margin: 1vh;
   display: block;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2666666667));
+}
+#reviews #final:hover {
+  transform: scale(1.1);
 }
 #reviews .review {
   position: absolute;
@@ -503,6 +616,9 @@ section {
 }
 #reviews .review footer {
   margin-top: 1vh;
+}
+#reviews .review:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
